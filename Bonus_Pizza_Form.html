@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patrick's Pizza!</title>
+</head>
+<body>
+    <form method="post" action="https://request-inspector.glitch.me/">
+    <fieldset>
+        <legend>Login</legend>
+     <div>
+        <label for="username">Username</label>
+        <input id="username" type="text" name="username" placeholder="Enter Username">
+    </div>
+    <div>
+        <label for="Password">Password</label>
+        <input id="Password" type="password" name="Password" placeholder="Enter Password">
+    </fieldset>
+    <fieldset>
+        <legend>Contact Information</legend>
+        <div>
+            <label for="Name">Name</label>
+            <input id="Name" type="text" name="Name">
+        </div>
+        <div>
+            <label for="Address">Address</label>
+            <input id="Address" type="text" name="Address">
+        </div>
+        <div>
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="text" name="phone">
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input id="email" type="text" name="email">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>How do you want your pizza?</legend>
+            What Size Pizza?
+            <select name="size">
+            <option value=""></option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="Extra Large">Extra Large</option>
+            </select>
+        <br>
+            Which Sauce would you like?
+            <label>
+                <input id="sauce" type="radio" name="Sauce?" value="Tomato">Tomato
+            </label>
+            <label>
+                <input id="sauce" type="radio" name="Sauce?" value="Alfredo">Alfredo
+            </label>
+            <label>
+                <input id="sauce" type="radio" name="Sauce?" value="BBQ">BBQ
+            </label>
+        <br>
+            Which type of cheese would you like?
+            <label>
+                <input id="cheese" type="checkbox" name="cheese1" value="Cheddar">Cheddar
+            </label>
+            <label>
+                <input id="cheese" type="checkbox" name="cheese2" value="Mozzarella">Mozzarella
+            </label>
+            <label>
+                <input id="cheese" type="checkbox" name="cheese3" value="Asiago">Asiago
+            </label>
+            <label>
+                <input id="cheese" type="checkbox" name="cheese4" value="Goat Cheese">Goat Cheese
+            </label>
+        <br>
+            Pick our your toppings
+            <label>
+                <input id="topping" type="checkbox" name="pepperoni" value="pepperoni">Pepperoni
+            </label>
+            <label>
+                <input id="topping" type="checkbox" name="beef" value="beef">Beef
+            </label>
+            <label>
+                <input id="topping" type="checkbox" name="chicken" value="chicken">Premium Chicken
+            </label>
+            <label>
+                <input id="topping" type="checkbox" name="peppers" value="peppers">Peppers
+            </label>
+            <label>
+                <input id="topping" type="checkbox" name="onions" value="onions">Onions
+            </label>
+        <br>
+            <label>
+                <input id="topping" type="checkbox" name="mushrooms" value="mushrooms">Mushrooms
+            </label>
+    </fieldset>
+    <fieldset>
+            <legend>How are you getting your pizza?</legend>
+            <label>
+                <input id="getting" type="radio" name="getting?" value="Delivery">Delivery
+            </label>
+            <label>
+                <input id="getting" type="radio" name="getting?" value="Carryout">Carryout
+            </label>
+    </fieldset>
+            <input type="hidden" name="user_id" value="432">
+            <button type="submit">Order my Pizza!</button>
+    </form>
+</body>
+</html>
