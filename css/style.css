@@ -27,9 +27,11 @@ body { font-family: 'Major Mono Display', monospace;
 
 }
 
-tr, td {
+td, th {
     font-size: 1.3em;
     padding: 4px;
+    border: 2px solid black;
+    background-color: yellow;
 }
 
 a:link {

@@ -1,0 +1,38 @@
+.rotateimg {
+    transform: rotate(12deg);
+}
+
+body {
+    background-color: rgb(164,226,232);
+    color: darkblue;
+}
+
+hr {
+    border-top: 1px solid white;
+}
+
+body {
+    font-family: 'American Typewriter', serif;
+}
+
+
+h3 {
+    font-weight: normal;
+    color: rgb(83,143,90);
+
+}
+header h1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(246,0,234);
+    background-color: white;
+    border-radius: 25px;
+}
+
+section:nth-of-type(2){
+    background-color: white;
+}
+
+section:nth-of-type(1) ul{
+    text-decoration: underline;
+}
+
