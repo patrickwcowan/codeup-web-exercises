@@ -1,0 +1,49 @@
+.fancy-header {
+    text-align: center;
+}
+
+h1, h3 {
+    color: coral;
+    text-decoration: underline;
+}
+
+body {
+    background-color: yellow;
+}
+
+body {
+    background-image: url("../img/beach.png");
+}
+
+ol { list-style: upper-roman;
+
+}
+
+ul { list-style: square;
+
+}
+
+body { font-family: 'Major Mono Display', monospace;
+
+}
+
+tr, td {
+    font-size: 1.3em;
+    padding: 4px;
+}
+
+a:link {
+    color:red;
+}
+
+a:visited {
+    color:black;
+}
+
+a:hover {
+    color:blue;
+}
+
+a:active {
+    color: green;
+}
