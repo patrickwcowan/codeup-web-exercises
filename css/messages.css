@@ -1,0 +1,54 @@
+:root {
+    --box1-bg-color: rgb(203,220,255);
+    --box2-bg-color: rgb(198,246,217);
+    --box3-bg-color: rgb(251,254,195);
+    --box4-bg-color: rgb(255,209,214);
+    --box1-tx-color: rgb(7,14,147);
+    --box2-tx-color: rgb(16,115,53);
+    --box3-tx-color: rgb(148,130,4);
+    --box4-tx-color: rgb(145,10,50);
+
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Upxbuntu, sans-serif;
+}
+
+.message {
+    margin: auto;
+    margin-bottom: .5em;
+    margin-top: .5em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: .5em;
+    width: 50%;
+    border-radius: 5px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.message-info {
+    background-color: var(--box1-bg-color);
+    color: var(--box1-tx-color);
+}
+
+.message-success {
+
+    background-color: var(--box2-bg-color);
+    color: var(--box2-tx-color)
+}
+
+.message-warning {
+    background-color: var(--box3-bg-color);
+    color: var(--box3-tx-color)
+}
+
+.message-error {
+    background-color: var(--box4-bg-color);
+    color: var(--box4-tx-color)
+}
