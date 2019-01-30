@@ -13,7 +13,7 @@
     height: 120px;
     width: 300px;
     padding: 10px;
-    background: red;
+    background: rgb(208,0,108);
     border: 1px solid;
     position: absolute;
     top: 300px;
@@ -23,7 +23,7 @@
     height: 259px;
     width: 130px;
     padding: 10px;
-    background: blue;
+    background: rgb(5,24,108);
     float: left;
     border: 1px solid;
     position: absolute;
@@ -31,44 +31,15 @@
     right: 595px;
 }
 
-#star-five {
-    margin: 50px 0;
-    position: absolute;
-    display: block;
-    color: black;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid black;
-    border-left: 100px solid transparent;
-    transform: rotate(35deg);
+p {
+    width: 225px;
+    height: 225px;
 }
-#star-five:before {
-    border-bottom: 80px solid black;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
+.star {
+    font-size: 900%;
+    color: #fff;
     position: absolute;
-    height: 0;
-    width: 0;
-    top: -35px;
-    left: -65px;
-    display: block;
-    content: '';
-    transform: rotate(-35deg);
-    right: 400px;
+    top: 30px;
+    left: 2px;
+    float: left;
 }
-#star-five:after {
-    position: absolute;
-    display: block;
-    color: black;
-    top: 3px;
-    left: -105px;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid black;
-    border-left: 100px solid transparent;
-    transform: rotate(-70deg);
-    content: '';
-}
-

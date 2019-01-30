@@ -90,7 +90,6 @@ a {
     width: calc(25% - 1em);
     margin-left: .5em;
     margin-right: .5em;
-
 }
 
 .timeline {
@@ -135,3 +134,8 @@ a {
     padding: 0;
     list-style-type: none;
 }
+
+.profile-entry {
+    margin: .5em;
+}
+

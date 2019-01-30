@@ -1,0 +1,126 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+
+.getgit {
+    display: block;
+    margin: auto;
+    max-width: 600px;
+    padding-top: 85px;
+
+}
+
+.btn {
+    background-color: rgb(230,98,102);
+    color: white;
+    text-decoration: underline;
+    position: absolute;
+    border-style: hidden;
+    font-size: 120%;
+    right: 3%;
+    top: 4%;
+    border-radius: 3px;
+    padding: 2px 10px;
+}
+
+.btn:hover {
+    color: wheat;
+}
+
+.headerbox {
+    background-color: #cf4646;
+    height: 555px;
+    width: 100%;
+    position: relative;
+    align-content: center;
+}
+
+.purchase {
+    color: white;
+    background-color: #cf4646;
+    font-size: 90%;
+    font-weight: bold;
+    padding: 18px 30px;
+    border-radius: 30px;
+    border-width: 1px;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 150px;
+    cursor: pointer;
+    transition: .7s background-color;
+}
+
+.purchase:hover {
+    background-color: white;
+    color: #cf4646;
+}
+
+.started {
+    color: white;
+    top: 100px;
+    left: 50px;
+    display: block;
+    position: relative;
+}
+
+a {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                       /*                     ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
