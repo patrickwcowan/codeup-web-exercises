@@ -32,9 +32,9 @@
                     <a class="nav-link text-info" href="#">Menu</a>
                 </li>
                 <li>
-                    <form class="form-inline">
+                    <form class="form-inline" action="https://request-inspector.glitch.me/" method="POST">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button type="button" class="btn btn-outline-dark bg-light">Search stores near you!</button>
+                        <button type="submit" name="Zip" class="btn btn-outline-dark bg-light">Search stores near you!</button>
                     </form>
                 </li>
             </ul>
@@ -57,7 +57,7 @@
 
 <!-- Toggle Buttons START -->
 
-    <form action="" method="post">
+    <form action="https://request-inspector.glitch.me/" method="POST">
     <nav class="container">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
@@ -140,11 +140,11 @@
                         <div class="card-header">Cheese</div>
                         <div class="card-body">How Much?</div>
                         <div class="form-group px-3">
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Light</option>
-                                <option>Normal</option>
-                                <option>Extra</option>
-                                <option>Double</option>
+                            <select class="form-control" id="cheese-amnt" name="cheese-amnt">
+                                <option value="light">Light</option>
+                                <option value="normal">Normal</option>
+                                <option value="Extra">Extra</option>
+                                <option value="Double">Double</option>
                             </select>
                         </div>
                     </div>
@@ -155,20 +155,20 @@
                         <div class="card-header">Sauce</div>
                         <div class="card-body">What Type?</div>
                         <div class="form-group px-3">
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Tomato sauce</option>
-                                <option>Marinara sauce</option>
-                                <option>BBQ sauce</option>
-                                <option>Alfredo sauce</option>
+                            <select class="form-control" id="sauce-type" name="sauce-type">
+                                <option value="tomato">Tomato sauce</option>
+                                <option value="marinara">Marinara sauce</option>
+                                <option value="bbq">BBQ sauce</option>
+                                <option value="alfredo">Alfredo sauce</option>
                             </select>
 
                         </div>
                         <div class="card-body">How Much?</div>
                         <div class="form-group px-3">
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Light</option>
-                                <option>Normal</option>
-                                <option>Extra</option>
+                            <select class="form-control" id="sauce-much" name="sauce-much">
+                                <option value="light">Light</option>
+                                <option value="normal">Normal</option>
+                                <option value="extra">Extra</option>
                             </select>
                         </div>
                     </div>
@@ -176,6 +176,7 @@
 
                 </div>
                 <div class="card-footer text-right">
+                    <a class="btn btn-primary" href="">< Previous Step</a>
                     <a class="btn btn-primary" href="">Next Step <i class="fas fa-angle-right"></i></a>
                 </div>
             </div>
@@ -253,14 +254,14 @@
                     </div>
                 </div>
                 <div class="card-footer text-right">
-                    <a class="btn btn-primary" href="">Next Step <i class="fas fa-angle-right"></i></a>
+                    <button type="submit" class="btn btn-primary">Checkout <i class="fas fa-shopping-cart"></i></button>
                 </div>
             </div>
 
             <!-- END FIRST CARD-->
 
         </div>
-
+        </div>
     </nav>
     </form>
 
