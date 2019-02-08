@@ -6,43 +6,37 @@
  * When called, the function should return a message that says hello to the passed in name.
  *
  * Example
- * > sayHello("codeup") // returns "Hello, codeup!"
+ * > sayHello("codeup") // returns "Hello, codeup!"**/
 
 
-function sayHello() {
-    alert("Hello, Patrick");
+function sayHello(name) {
+    return "Hello, " + name + "!";
 }
 
-sayHello();
+console.log(sayHello("Patrick"));
 
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
  * Store the result of the function call in a variable named 'helloMessage'.
  *
- * console.log 'helloMessage' to check your work
+ * console.log 'helloMessage' to check your work**/
+
+var helloMessage = sayHello("Patrick");
+console.log(helloMessage);
 
 
-function sayHello(helloMessage) {
-    console.log(helloMessage)
-}
-
-sayHello('Patrick');
 
 /**
  * TODO:
  * Store your name as a string in a variable named 'myName', and pass that
  * variable to the 'sayHello' function. You should see the same output in the
- * console.
- */
+ * console.**/
 
-var myName = ('Patrick');
 
-function sayHello() {
-    console.log(myName)
-}
+var myname = "patrick";
 
-sayHello();
+console.log(sayHello(myname));;
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -53,6 +47,8 @@ var random = Math.floor((Math.random() * 3) + 1);
  * Create a function called 'isTwo' that takes a number as a parameter.
  * The function should return a boolean value based on whether or not the passed
  * number is the number 2.
+ *
+ *
  *
  * Example
  * > isTwo(1) // returns false
@@ -66,6 +62,21 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 
+
+        function isTwo(number) {
+           return number == 2;
+        }
+
+        console.log(isTwo(3));
+        console.log(isTwo(2));
+        console.log(isTwo(25));
+        console.log(isTwo(8));
+
+        console.log("Random Number is: " + random);
+
+        console.log(isTwo(random));
+
+
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -78,12 +89,31 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
+        function calculateTip(tip, cost) {
+        return ((tip) * cost)
+}
+
+        console.log(calculateTip(.25, 20));
+        console.log(calculateTip(.15, 25));
+        console.log(calculateTip(.20, 35));
+        console.log(calculateTip(.50, 20));
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+
+       var inputBill = prompt("What is your bill total?");
+       var inputTip = prompt("What percentage tip would you like to give? (Example 20 or 15)");
+
+        function tipCalculation(bill, tip) {
+            alert("Your total bill is: " + (bill * (1 +(tip * .01))));
+
+        }
+
+        tipCalculation(inputBill, inputTip);
 
 /**
  * TODO:
@@ -99,3 +129,16 @@ var random = Math.floor((Math.random() * 3) + 1);
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+        var originalPrice = 100;
+        var discountAmount = 20;
+
+
+
+
+        function applyDiscount(price, discount) {
+        return price * (((discount * .01) + 1));
+
+}
+
+        console.log(applyDiscount(originalPrice,discountAmount));
