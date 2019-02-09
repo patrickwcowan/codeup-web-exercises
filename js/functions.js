@@ -108,6 +108,8 @@ var random = Math.floor((Math.random() * 3) + 1);
        var inputBill = prompt("What is your bill total?");
        var inputTip = prompt("What percentage tip would you like to give? (Example 20 or 15)");
 
+
+
         function tipCalculation(bill, tip) {
             alert("Your total bill is: " + (bill * (1 +(tip * .01))));
 
@@ -131,13 +133,13 @@ var random = Math.floor((Math.random() * 3) + 1);
  */
 
         var originalPrice = 100;
-        var discountAmount = 20;
+        var discountAmount = .2;
 
 
 
 
         function applyDiscount(price, discount) {
-        return price * (((discount * .01) + 1));
+        return price - (price * discount)
 
 }
 
