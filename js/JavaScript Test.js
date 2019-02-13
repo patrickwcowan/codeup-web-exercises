@@ -5,12 +5,12 @@
 // Write a function, isShortWord, that takes in a string and
 // returns the boolean value true if the passed argument is shorter than 5 characters. Return false otherwise.
 
-// function isShortWord(character) {
-//     return character.length < 5
-//
-// }
-//
-// console.log(isShortWord("Wdddd"));
+function isShortWord(character) {
+    return character.length < 5
+
+}
+
+isShortWord("Wdddd");
 
 // Write a function, isSameLength, that takes in two string
 // inputs and returns the boolean value true if the passed arguments are the same length. Return false otherwise.
@@ -195,8 +195,29 @@ hasLowerCase("Hi"); // True
 
 // Make a function named isSpace(letter) that returns if a character is a space character
 // Make a function named isZero(number)
+    function isZero(Number) {
+        return Number === 0;
+    }
+
+    // console.log(isZero(9));
+    // console.log(isZero(2));
+    // console.log(isZero(90));
+    // console.log(isZero(0));
+
 // Make a function named notZero(input) that returns true if the input is not zero
+    function notZero(input) {
+        return input !== 0;
+    }
+
+        // console.log(notZero(90)); //true
+        // console.log(notZero(2));  //true
+        // console.log(notZero(0));  //false
+        // console.log(notZero(2));  //true
+
 // Write a function named lowerCase(string)
+    function lowerCase(string) {
+        return string
+    }
 // Write a function named double(n) that returns a number times two
 // Write a function named triple(n) that returns a number times 3
 // Write a function named quadruple(n) that returns a number times 4
@@ -230,14 +251,26 @@ hasLowerCase("Hi"); // True
 // if the input to the function is the string "justin" and "It's not Justin" otherwise.
 //     If the input contains white space or numbers, return the string "INVALID INPUT".
 
-function makeJustinMessage() {
-    return "It's Justin!"
+function makeJustinMessage(input) {
+    if (input === "justin") {
+        return "It's Justin";
+    } else if (input === " ") {
+        return "INVALID INPUT";
+    } else if (!isNaN(input)) {
+        return "INVALID INPUT";
+    } else {
+        return "It's not Justin";
+    }
 }
 
-console.log(makeJustinMessage());
+// console.log(makeJustinMessage("Justin"));
+// console.log(makeJustinMessage("patrick"));
+// console.log(makeJustinMessage("2"));
+// console.log(makeJustinMessage("patr ick"));
 
-
-// Write a function that returns a string describing the action to be taken for a given street light color input. For example, if the function input is the string "red", a message like "STOP!" could be returned from the function. Input should not be case sensitive.
+// Write a function that returns a string describing the action to be taken for a given street light color input.
+// For example, if the function input is the string "red", a message like "STOP!" could be returned from the function.
+// Input should not be case sensitive.
 //
 //     __
 // Create a function that simply returns an input as an output. If no input is passed to the function when it is called, return the string "no input provided."
@@ -281,3 +314,28 @@ console.log(makeJustinMessage());
 //     DOUBLE GOLD STAR BONUS
 //
 //     Allow unit conversion to metric system units
+
+
+
+////////////////////////////////LOOP///////////////////////////////////////////////
+
+// while(/*this is true*/){
+//         //body will execute
+// }
+//
+//
+
+// let number = 1;
+//     while (number <= 50){
+//         if(number % 2 === 0){
+//             console.log(number);
+//         }
+//         number++;
+//     }
+
+for (var i = 1; i < 100; i++) {
+    console.log('for loop iteration #' + i)
+}
+
+
+if (var i =)
