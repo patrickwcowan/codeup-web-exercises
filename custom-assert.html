@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patrick</title>
+</head>
+<body>
+    <script>
+
+        function returnInputAsOutput(input) {
+            return "input";
+        }
+
+        function tester(input1,input2,input3) {
+            return returnInputAsOutput(input2) === input3;
+        }
+
+        console.log(tester(returnInputAsOutput(), 300, 300))
+
+
+
+        function testAFunction(callback, input, expected) {
+            return callback(input) === expected;
+        }
+
+    </script>
+</body>
+</html>
+
+
+<!--TESTING FUNCTION-->
+<!--Create a new static web project in IntelliJ called "custom-assert"-->
+<!--Pair up!-->
+<!--With your partner, figure out how to build a function that tests other functions.-->
+<!--This testing function should be defined with three parameters:-->
+<!--1. the name of the function to test-->
+<!--2. an input to the function to test-->
+<!--3. the expected output of the test function when passed the input-->
+<!--The function should return true or false based on whether or not the passed function returns the passed output based on the passed input.-->
+<!--Test your testing function with the following flawed function which should return false:-->
+<!--function returnInputAsOutput(input) {-->
+<!--return "input";-->
+<!--}-->
+<!--What should be fixed to make returnInputAsOutput work correctly?-->
+
+
+

@@ -324,7 +324,7 @@ function makeJustinMessage(input) {
 // }
 //
 //
-
+//
 // let number = 1;
 //     while (number <= 50){
 //         if(number % 2 === 0){
@@ -333,9 +333,33 @@ function makeJustinMessage(input) {
 //         number++;
 //     }
 
-for (var i = 1; i < 100; i++) {
-    console.log('for loop iteration #' + i)
-}
+// i = 50;
+//
+// while (i > 0) {
+//     console.log(i);
+//     i--;
+// }
+//
+// do {
+//     console.log(i);
+//     i--;
+// } while (i > 0);
+//
+// for (var i = 50; i > 0; i--) {
+//     console.log(i);
+// }
+
+// for (var i = 1; i < 100; i++) {
+//
+//     if (i % 2 !== 1) {
+//         // number isn't even
+//         // odd numbers aren't as cool
+//         // skip the rest of the loop and continue with the next iteration
+//         continue;
+//     }
+//
+//     console.log('Here is a lovely even number: ' + i);
+// }
 
 
-if (var i =)
+
