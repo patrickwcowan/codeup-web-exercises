@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F0F0;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.header {
+    /*max-width: 1800px;*/
+}
+
+.main-body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nav-container-sm {
+    display: none;
+    padding:0
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.headbar {
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    position: relative;
+
+}
+
+.headlogo {
+    width: 105px;
+    height: 105px;
+    margin-top: -88px;
+    z-index: 1000;
+
+}
+
+.nav-container {
+    width: 75%;
+}
+
+.nav-links a {
+    color: black;
+}
+
+.nav-links a:hover {
+    color: rgba(27, 171, 169);
+    font-size: larger;
+    text-decoration: none;
+}
+
+.body-container {
+    width:90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    /*border: solid black;*/
+}
+
+.font-abel {
+    font-family: 'Abel', sans-serif;
+}
+
+.font-anton {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+}
+
+.font-anton-h1 {
+    font-size: 64px;
+    position: relative;
+    bottom: 50px;
+}
+
+.font-anton-h2 {
+    font-size: 48px;
+}
+
+.font-anton-h3 {
+    font-size: 20px;
+}
+
+.circlesize {
+    width: 100%;
+
+}
+
+.img-small {
+    width: 100%;
+    background-position: top;
+    z-index: 1000;
+    border: 10px solid #e6e6e6;
+    border-radius: 3%;
+    margin-bottom: 5px;
+}
+
+.img-small img {
+    width: 100%;
+}
+
+.icon-img img {
+    width: 25px;
+    height: 25px;
+}
+
+.small-pic {
+    display: none;
+}
+
+.twitter-section {
+    display: none;
+}
+
+.md-toggle {
+    visibility: hidden;
+}
+
+.nav-container-md {
+    display: none;
+}
+
+
+@media only screen and (min-width: 576px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .nav-container-xs {
+        display: none;
+    }
+
+    .nav-container-sm {
+        display: block;
+        line-height: 75px;
+    }
+
+    .body-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .codeup-design-text {
+        position: relative;
+        bottom: 25px;
+    }
+
+    .font-anton-h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .font-anton-h2 {
+        font-size: 36px;
+        position: relative;
+        bottom: 75px;
+    }
+
+    .badge-row {
+        position: relative;
+        bottom: 100px;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .hrelement {
+        border-top: 2px solid #e6e6e6;
+        height: 10px;
+        margin-top: -80;
+        width: 75%;
+    }
+
+    .xs-pic {
+        display: none;
+    }
+
+    .small-pic {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: orange;
+    }
+
+    .twitter-section {
+        display: block;
+    }
+
+    .selected-work-text {
+        visibility: hidden;
+    }
+
+    .md-toggle {
+        visibility: visible;
+    }
+
+    .twitter-section img {
+        width: 100%;
+    }
+
+    .nav-container-sm {
+        visibility: hidden;
+    }
+
+
+    .headlogo {
+        width: 105px;
+        height: 105px;
+        margin-top: -88px;
+        z-index: 1000;
+        position: relative;
+        right: 35%;
+
+    }
+
+    .codeup-design-text {
+        position: relative;
+        bottom: 103px;
+        right: 95px;
+    }
+
+    .nav-container-md {
+        display: block;
+        position: relative;
+        bottom: 96px;
+        left: 63%;
+    }
+
+    .nav-links {
+        color: black;
+    }
+
+    .nav-links:hover {
+        color: rgba(27, 171, 169);
+        font-size: larger;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: red;
+    }
+
+}
