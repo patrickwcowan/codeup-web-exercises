@@ -1,74 +1,68 @@
-// 1.  create an array of shapes
-    var shapes = ['circle', 'triangle', 'square', 'rectangle', 'sphere'];
-// – prompt the user to search for a specific shape
-//     var userSearch = prompt("What shape would you like? i.e circle, triangle, square, rectangle, sphere");
-// – using a for loop, iterate through the array to log the shapes until the matching shape is found
+// Mini Exercise 3
+// PAIR UP!
+//     Create a dog object...
+//     The dog object should have properties for:
+//     breed (string),
+//     weightInPounds (number),
+//     age (number),
+//     color (string),
+//     sterilized (boolean),
+//     shotRecords (array of objects with properties for date and typeOfShot)
+// The dog object should have methods to:
+//     bark() - will console.log "Woof!"
+// getOlder() - will increase age by 1
+// fix() - will set sterile to true if dog sterilized property is false
+// vaccinate() - takes in an argument for the name of the shot and adds a new shot with the current date to the shotRecords array
 
-// for (var i = 0; i < shapes.length; i++) {
-//     var index = shapes.indexOf(userSearch);
-//     if (index === i) {
-//         console.log('Found you shape: ' + userSearch);
-//         break;
-//     } else {
-//         console.log("Not your shape, this is : " + shapes[i]);
-//     }
-// }
-
-// – once the shape is found, log a message (“Shape is found”) and use a break statement to exit loop.
-
-    // console.log('Found you shape: ' + userSearch);
-
-// 2.  Create a function that returns a random day of the week
-
-    var daysOfTheWeek =  ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-    var randomNumber = Math.floor(Math.random() * 7);
-
-    function randomDay(){
-        return daysOfTheWeek[randomNumber];
-    }
-
-    // console.log(randomDay());
-
-// 3.  Create a function that takes a single letter and returns what number the letter is in the alphabet. Ignore case.
-// – someFunction("a") // returns 1
-// – someFunction("z") // returns 26
-
-var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-
-function someFunction(input) {
-    var index = alphabet.indexOf(input);
-    return (index + 1);
+function bark() {
+    console.log("Woof");
 }
 
-// console.log(someFunction("g")); // 7
-// console.log(someFunction("m")); // 13
+function fix() {
+    if (dog.sterilized === false){
+        dog.sterilized = true
+    }
+}
 
-// 4.  Create a function that returns the longest string in a given array of string elements.
+function getOlder() {
+    dog.age = dog.age + 1;
+}
 
-var foods = ['Cheese', 'Egg', 'Sandwiches', 'Hamburger', 'water'];
+function vaccinate(nameOfShot,currentdate,index) {
+    dog.shotRecords[index].typeOfShot = nameOfShot;
+    dog.shotRecords[index].date = currentdate;
+}
 
-var lgth = 0;
-var longest;
-//
-function longestString(input) {
-    for (var i = 0; i < input.length; i++) {
-        if (input[i].length > lgth) {
-            lgth = input[i].length;
-            longest = input[i];
+var dog = {
+    breed: "Chow",
+    weightInPounds: 12,
+    age: 4,
+    color: "White",
+    sterilized: false,
+    shotRecords: [
+        {
+        date:'',
+        typeOfShot:''
+        },
+        {
+        date:'',
+        typeOfShot:''
         }
-    }
-    return longest
-}
+    ],
+    vaccinate: vaccinate,
+    dogSound: bark,
+    dogOlder: getOlder,
+    getFixed: fix
+};
 
-console.log(longestString(foods));
-
-
-
-
-
-// 5.   Create a function that takes in two arrays of elements, including numbers. If all numbers added together in the first array is equal to all the number inputs added in the second array, return true, otherwise, false. Only add together numeric elements but either array may contain non-numeric elements.
-// – var arr1 = ['bob', 1, true, 1, 2];
-// – var arr2 = [2, null, undefined, 0, 2, "apple"]
-// – exampleFunction(arr1, arr2) // returns true
-
+dog.dogSound();
+console.log(dog.age);
+dog.dogOlder();
+console.log(dog.age);
+console.log(dog.sterilized);
+dog.getFixed();
+console.log(dog.sterilized);
+console.log(dog.shotRecords[0]);
+dog.vaccinate("Heart Worms", "Feb 15", [0]);
+console.log(dog.shotRecords[0]);
+console.log(dog.shotRecords);
