@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Calculator</title>
+</head>
+<body>
+
+    <form>
+        <input id="input1">
+        <input id="input2">
+        <input id="input3">
+        <br>
+        <!--First Row-->
+        <button id="one" value="1">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+        <button id="plus">+</button>
+        <br>
+        <button id="four">4</button>
+        <button id="five">5</button>
+        <button id="six">6</button>
+        <button id="minus">-</button>
+        <br>
+        <button id="seven">7</button>
+        <button id="eight">8</button>
+        <button id="nine">9</button>
+        <button id="times">*</button>
+        <br>
+        <button id="sea">C</button>
+        <button id="zero">0</button>
+        <button id="equals">=</button>
+        <button id="division">/</button>
+    </form>
+
+<script>
+    // Inputs
+    var inputOne = document.getElementById('input1');
+    var inputTwo = document.getElementById('input2');
+    var inputThree = document.getElementById('input3');
+
+    // First Row
+    var btnOne = document.getElementById('one');
+    var btnTwo = document.getElementById('two');
+    var btnThree = document.getElementById('three');
+    var btnFour = document.getElementById('four');
+
+    var listener = function (event) {
+        if (btnOne) {
+            inputOne = '1'
+        }
+    };
+
+
+
+
+        btnOne.addEventListener('click', listener, false);
+
+</script>
+
+</body>
+</html>
