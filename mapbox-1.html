@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox</title>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+<body>
+<div id='map' style='width: 400px; height: 300px;'></div>
+
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+
+<script>
+    mapboxgl.accessToken = myMapBoxKey;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 10,
+        center: [-94.064079, 33.442211]
+    });
+
+
+
+    var interval = 5000;
+
+    setTimeout(function () {
+        map.setStyle('mapbox://styles/mapbox/satellite-v9');
+        map.setZoom('2');
+    }, interval);
+
+</script>
+
+</body>
+</html>
+
+
