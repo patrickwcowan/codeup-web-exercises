@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mapbox</title>
+    <title>Mapbox 2</title>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
 </head>
 <body>
-<div id='map' style='width: 400px; height: 300px;'></div>
+<div id='map' style='width: 600px; height: 600px;'></div>
 
 
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
@@ -18,22 +18,21 @@
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v9',
-        zoom: 10,
-        center: [-94.064079, 33.442211]
+        zoom: 13,
+        center: [-77.0502, 38.8893]
     });
-
-    var interval = 5000;
-
-    setTimeout(function () {
-        map.setStyle('mapbox://styles/mapbox/satellite-v9');
-        map.setZoom('2');
-        ///or map.setStyle('mapbox://styles/mapbox/satellite-v9').setZoom('2);
-    }, interval);
 
     var marker = new mapboxgl.Marker();
 
-    marker.setLngLat([-98.4896, 29.4266]);
+    marker.setLngLat([-77.0502, 38.8893]);
     marker.addTo(map);
+    marker.setDraggable(true);
+
+
+    var lincolnMemorial = new mapboxgl.Popup();
+        lincolnMemorial.setHTML("<p>Lincoln Memorial</p>");
+        marker.setPopup(lincolnMemorial);
+
 
 
 

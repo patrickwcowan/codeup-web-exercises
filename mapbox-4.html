@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox 4</title>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+<body>
+<div id='map' style='width: 600px; height: 600px;'></div>
+
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+<script src="reverse.js"></script>
+
+<script>
+
+    //Setting San Antonio as Center
+    mapboxgl.accessToken = myMapBoxKey;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 10,
+        center: [-98.4936, 29.4241]
+    });
+
+
+    //Recenter over Zion National Park
+var zionNational = '1 Zion Park Blvd. Springdale, UT 84767';
+
+    setTimeout(function () {
+        geocode(zionNational, myMapBoxKey).then(function(result) {
+            map.setCenter(result);
+            map.setZoom('10');
+        });
+    }, 2000);
+
+
+
+    setTimeout(function () {
+    reverseGeocode({lat: 21.3069, lng: -157.8583}, myMapBoxKey).then(function(results) {
+        geocode(results, myMapBoxKey).then(function (value) {
+            map.setCenter(value);
+            map.setZoom('10');
+        })
+    });
+    }, 5000);
+
+</script>
+
+</body>
+</html>
+
+
