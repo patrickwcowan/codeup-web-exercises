@@ -31,6 +31,7 @@ var zionNational = '1 Zion Park Blvd. Springdale, UT 84767';
 
     setTimeout(function () {
         geocode(zionNational, myMapBoxKey).then(function(result) {
+            console.log(result);
             map.setCenter(result);
             map.setZoom('10');
         });

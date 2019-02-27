@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox Maps API</title>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+<body>
+<div id='map' style='width: 600px; height: 600px;'></div>
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+<script src="reverse.js"></script>
+
+<script>
+
+    mapboxgl.accessToken = myMapBoxKey;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 5
+    });
+
+    //Generate a map that shows the city with your favorite restaurant using geocoding.
+
+    // Create a marker on your map of the exact location of your favorite restaurant set the zoom to allow for best viewing distance
+    var dragos = "Hilton New Orleans Riverside New Orleans, LA 70140";
+    var marker = new mapboxgl.Marker();
+
+    geocode(dragos, myMapBoxKey).then(function(result) {
+        // console.log(result);
+        map.setCenter(result);
+        map.setZoom(10);
+        marker.setLngLat(result);
+        marker.addTo(map);
+    });
+
+    //Redraw the map of the above location at zoom levels 5, 15, and 20. Do this by simply
+    // changing the value of zoom level where the map properties are initially set and refresh
+    // the page to see the changes. Can the zoom be changed programmatically after the initial map is drawn?
+
+    // setTimeout(function () {
+    //     map.setZoom(15)
+    // }, 5000);
+    //
+    // setTimeout(function () {
+    //     map.setZoom(20)
+    // }, 8000);
+
+    // Create a popup with the name of the restaurant.
+
+    var dragosPopup = new mapboxgl.Popup();
+    dragosPopup.setHTML("<p>Drago's</p>");
+    marker.setPopup(dragosPopup);
+
+    // Refactor your code to display at least three of your favorite restaurants with information about
+    // each. Create an array of objects with information about each restaurant to accomplish this. Use a
+    // .forEach() loop rather than a for loop.
+
+//     var restaurants = [
+//         {
+//             name: "Native Grill and Wings",
+//             address: "3238 Wurzbach Rd, San Antonio, TX 78238"
+//             message:''
+//
+//         },
+//         {
+//             name: "Texas Roadhouse 1604",
+//             address: "6616 W Loop 1604 N, San Antonio, TX 78254"
+//
+//         },
+//         {
+//             name: "Jason's Deli 1604",
+//             address: "5607 W Loop 1604 N, San Antonio, TX 78253"
+//
+//         }
+//     ];
+//
+// console.log(restaurants[0].name);
+
+
+
+</script>
+
+</body>
+</html>
+
+
