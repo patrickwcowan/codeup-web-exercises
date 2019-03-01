@@ -1,0 +1,163 @@
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1800px;
+}
+
+.row {
+    width: 100%;
+
+}
+
+.rounder {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -275px;
+    margin-top: -40px;
+}
+
+.column {
+    width: 25px;
+    height: 25px;
+    border: solid black;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
+.box1 {
+
+    position: absolute;
+    left: 9px;
+    top: 50px;
+}
+
+.box2 {
+
+    position: absolute;
+    left: 42px;
+    top: 50px;
+}
+
+.box3 {
+    background-color: orange;
+    position: absolute;
+    left: 76px;
+    top: 63px;
+
+}
+
+.box4 {
+    background-color: green;
+    position: absolute;
+    left: 76px;
+    top: 96px;
+
+}
+
+.box5 {
+    background-color: Cyan;
+    position: absolute;
+    left: -25px;
+    top: 63px;
+}
+
+.box6 {
+    background-color: Blue;
+    position: absolute;
+    left: -25px;
+    top: 96px;
+}
+
+
+.box7 {
+    background-color: brown;
+    position: absolute;
+    left: -25px;
+    top: 129px;
+}
+
+.box8 {
+    background-color: violet;
+    position: absolute;
+    left: -25px;
+    top: 162px;
+}
+
+.box9 {
+    background-color: sandybrown;
+    position: absolute;
+    left: -25px;
+    top: 195px;
+}
+
+.box10 {
+
+    position: absolute;
+    left: -25px;
+    top: 228px;
+}
+
+.box11 {
+
+    position: absolute;
+    left: -25px;
+    top: 261px;
+}
+
+.box12 {
+    background-color: orange;
+    position: absolute;
+    left: 9px;
+    top: 274px;
+
+}
+
+.box13 {
+    background-color: green;
+    position: absolute;
+    left: 42px;
+    top: 274px;
+
+}
+
+.box14 {
+    background-color: Cyan;
+    position: absolute;
+    left: 76px;
+    top: 261px;
+}
+
+.box15 {
+    background-color: Blue;
+    position: absolute;
+    left: 76px;
+    top: 228px;
+}
+
+
+.box16 {
+    background-color: brown;
+    position: absolute;
+    left: -25px;
+    top: 129px;
+}
+
+.box17 {
+    background-color: violet;
+    position: absolute;
+    left: -25px;
+    top: 162px;
+}
+
+.box18 {
+    background-color: sandybrown;
+    position: absolute;
+    left: -25px;
+    top: 195px;
+}
+
+/*.pusher {*/
+    /*width: 10%;*/
+    /*float: left;*/
+/*}*/

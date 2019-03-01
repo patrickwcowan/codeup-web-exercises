@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery FAQ</title>
+
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+
+    <button type="submit" name="hello">TOGGLE ME</button>
+    <dl>
+        <dt>Who is the director of the National Park Service?</dt>
+        <dd>Dan Smith is the deputy director exercising the authority of director for the National Park Service.</dd>
+        <dt>What government agency oversees the National Park Service?</dt>
+        <dd>The National Park Service is a bureau of the Department of the Interior. Directly overseeing its operation is the department's Assistant Secretary for Fish, Wildlife and Parks.</dd>
+        <dt>How many employees are in the National Park Service?</dt>
+        <dd>Permanent, temporary, and seasonal employees: More than 20,000</dd>
+        <dt>How old is the National Park System?</dt>
+        <dd>The National Park Service was created by an act signed by President Woodrow Wilson on August 25, 1916.</dd>
+        <dt>What is the origin of the National Park Service arrowhead?</dt>
+        <dd>The arrowhead was authorized as the official National Park Service emblem by the Secretary of the Interior on July 20, 1951.</dd>
+        <dt>How many areas are in the National Park System?</dt>
+        <dd>The system includes 418 areas covering more than 85 million acres in every state, the District of Columbia, American Samoa, Guam, Puerto Rico, and the Virgin Islands.</dd>
+        <dt>How many people visit the national parks?</dt>
+        <dd>Total recreation visitors to the national parks in 2017: 330,882,751</dd>
+        <dt>What is the National Park Service budget?</dt>
+        <dd>Fiscal Year (FY) 2014 Enacted: $2.98 billion</dd>
+        <dt>Where can I find a park map?</dt>
+        <dd>You can view maps on specific park websites or download maps from the Harpers Ferry Center map collection.</dd>
+        <dt>Can I bring my pet to a national park?</dt>
+        <dd>Some national parks welcome pets—in developed areas, on many trails and campgrounds, and in some lodging facilities. Learn more about pets in parks.</dd>
+    </dl>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+
+        
+        // $('dd').addClass('invisible');
+
+
+        $('button').click(function () {
+            $('dd').toggleClass('invisible');
+        });
+
+        $('dt').click(function () {
+            $(this).toggleClass('highlight');
+        })
+
+
+
+
+
+
+    });
+</script>
+</body>
+</html>

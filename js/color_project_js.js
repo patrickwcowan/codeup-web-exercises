@@ -10,41 +10,168 @@ function randomColor() {
 }
 
 
-    $('.random').click(function () {
+    $('.changer').click(function () {
         $(this).css('background', randomColor());
         console.log('You changed to: ' + randomColor());
     });
 
-    $('.changer').hover(
-        function () {
-            $(this).css('background-color', 'white');
-        },
-        function () {
-        }
-    );
 
-    // function boxOne() {
-    //     var random = randomColor();
-    //     $('.box1').css('background', random);
-    //     console.log("Box 1 color is: " + random);
-    //     $(".initial").html(random);
-    // }
-    // boxOne();
+    var count = 0;
+    var max = 10;
+    var interval = 50; // interval time in milliseconds
+
+        setInterval(function () {
+            $('.box1').css('background', randomColor());
+    }, interval);
+
+    setInterval(function () {
+        $('.box2').css('background', randomColor());
+    }, interval);
+
+    setInterval(function () {
+        $('.box3').css('background', randomColor());
+    }, interval);
+
+    setInterval(function () {
+        $('.box4').css('background', randomColor());
+    }, interval);
+
+    setInterval(function () {
+        $('.box5').css('background', randomColor());
+    }, interval);
+
+    setInterval(function () {
+        $('.box6').css('background', randomColor());
+    }, interval);
+
+    setInterval(function () {
+        $('.box7').css('background', randomColor());
+    }, interval);
+
+    setInterval(function () {
+        $('.box8').css('background', randomColor());
+    }, interval);
+
+    setInterval(function () {
+        $('.box9').css('background', randomColor());
+    }, interval);
+
+    setInterval(function () {
+        $('.box10').css('background', randomColor());
+    }, interval);
+
+    setInterval(function () {
+        $('.box11').css('background', randomColor());
+    }, interval);
+
+    setInterval(function () {
+        $('.box12').css('background', randomColor());
+    }, interval);
+
+    setInterval(function () {
+        $('.box13').css('background', randomColor());
+    }, interval);
+
+    setInterval(function () {
+        $('.box14').css('background', randomColor());
+    }, interval);
+
+    setInterval(function () {
+        $('.box15').css('background', randomColor());
+    }, interval);
+
+    setInterval(function () {
+        $('.box16').css('background', randomColor());
+    }, interval);
 
 
-    $('.box2').css('background', randomColor());
-    $('.box3').css('background', randomColor());
-    $('.box4').css('background', randomColor());
-    $('.box5').css('background', randomColor());
-    $('.box6').css('background', randomColor());
-    $('.box7').css('background', randomColor());
-    $('.box8').css('background', randomColor());
-    $('.box9').css('background', randomColor());
 
 
-    $(document).keydown(function () {
-        alert("hi");
-    });
+
+
+// function boxOne() {
+//         var random = randomColor();
+//         $('.box1').css('background', random);
+//         console.log("Box 1 color is: " + random);
+//         $('.changer').hover(
+//             function() {
+//                 $('.box1').html(random);
+//             },
+//             function() {
+//                 $('.box1').html('<h1></h1>');
+//             }
+//         );
+//     }
+//
+//
+//     boxOne();
+//
+//     function boxTwo() {
+//         var random = randomColor();
+//         $('.box2').css('background', random);
+//         console.log("Box 2 color is: " + random);
+//         // $(".initial2").html(random);
+//     }
+//     boxTwo();
+//
+//     function boxThree() {
+//         var random = randomColor();
+//         $('.box3').css('background', random);
+//         console.log("Box 3 color is: " + random);
+//         // $(".initial3").html(random);
+//     }
+//     boxThree();
+//
+//     function boxFour() {
+//         var random = randomColor();
+//         $('.box4').css('background', random);
+//         console.log("Box 4 color is: " + random);
+//         // $(".initial4").html(random);
+//     }
+//     boxFour();
+//
+//     function boxFive() {
+//         var random = randomColor();
+//         $('.box5').css('background', random);
+//         console.log("Box 5 color is: " + random);
+//         // $(".initial5").html(random);
+//     }
+//     boxFive();
+//
+//     function boxSix() {
+//         var random = randomColor();
+//         $('.box6').css('background', random);
+//         console.log("Box 6 color is: " + random);
+//         // $(".initial6").html(random);
+//     }
+//     boxSix();
+//
+//     function boxSeven() {
+//         var random = randomColor();
+//         $('.box7').css('background', random);
+//         console.log("Box 7 color is: " + random);
+//         // $(".initial7").html(random);
+//     }
+//     boxSeven();
+//
+//     function boxEight() {
+//         var random = randomColor();
+//         $('.box8').css('background', random);
+//         console.log("Box 8 color is: " + random);
+//         // $(".initial8").html(random);
+//     }
+//     boxEight();
+//
+//     function boxNine() {
+//         var random = randomColor();
+//         $('.box9').css('background', random);
+//         console.log("Box 9 color is: " + random);
+//         // $(".initial9").html(random);
+//     }
+//     boxNine();
+
+
+
 
 
 
