@@ -2,9 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Ajax Blog - Patrick</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Archive</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <div class="container">
+    <form>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Title</span>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Date</span>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Categories</span>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+    </form>
+        <div class="form-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Blog Entry:</span>
+
+            </div>
+            <br>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+
+        <button>Submit</button>
+
+
+        <div id="insertPic">Hi</div>
+
+
+<div id="posts" class=""></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    (function() {
+        "use strict";
+
+        var icons = [
+            {
+                "pic": "img/Bonus1.png"
+            }
+        ];
+
+        var location =$.ajax("data/blog.json");
+        location.done(function (data) {
+            var output = " ";
+            for (var i = 0; i < 10; i++) {
+                output += '<h3>' + data[i].title + '</h3><h5>' + data[i].date + '</h5><p>'+ data[i].categories +'</p><p>' + data[i].content + '</p>';
+                $('#posts').html(output);
+                $('#insertPic').prepend('<img src='+ icons[0].pic+'>');
+                // $('#theDiv').prepend('<img id="theImg" src="theImg.png" />')
+                console.log(icons[0]);
+            }
+        });
+
+
+
+
+
+
+
+
+    })();
+</script>
 </body>
 </html>
+

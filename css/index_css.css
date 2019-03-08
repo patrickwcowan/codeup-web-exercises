@@ -1,0 +1,64 @@
+.column {
+    width: 500px;
+    height: 500px;
+    border: solid black;
+    margin-right: 3px;
+    margin-top: 3px;
+    position: absolute;
+    left: 7px;
+    top: 4px;
+}
+
+.box1 {
+    width: 225px;
+    height: 225px;
+    border: solid black;
+    margin-right: 3px;
+    margin-top: 3px;
+    position: absolute;
+    left: 7px;
+    top: 4px;
+    background-color: red;
+}
+
+.box2 {
+    width: 225px;
+    height: 225px;
+    border: solid black;
+    margin-right: 3px;
+    margin-top: 3px;
+    position: absolute;
+    left: 261px;
+    top: 4px;
+    background-color: blue;
+}
+
+.box3 {
+    width: 225px;
+    height: 225px;
+    border: solid black;
+    margin-right: 3px;
+    margin-top: 3px;
+    position: absolute;
+    left: 7px;
+    top: 258px;
+    background-color: green;
+}
+
+.box4 {
+    width: 225px;
+    height: 225px;
+    border: solid black;
+    margin-right: 3px;
+    margin-top: 3px;
+    position: absolute;
+    left: 261px;
+    top: 258px;
+    background-color: yellow;
+}
+
+.newGame {
+    position: absolute;
+    left: 202px;
+    top: 544px;
+}
