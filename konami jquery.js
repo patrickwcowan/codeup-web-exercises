@@ -22,7 +22,7 @@ $(document).ready(function() {
     }
 
 
-
+console.log(event.keyCode);
 
 
 
