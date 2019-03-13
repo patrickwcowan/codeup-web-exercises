@@ -12,6 +12,15 @@
 // sleepIn(true, false) → false
 // sleepIn(false, true) → true
 
+// function sleepIn(weekday,vacation) {
+//     if (vacation === true || weekday === false) {
+//         return true
+//     } else if (weekday === true){
+//         return false
+//     }
+// }
+//
+// console.log(sleepIn());
 
 // Exercise 2
 // Given two int values, return their sum. Unless the two values are the same, then
@@ -23,6 +32,10 @@
 // sumDouble(3, 2) → 5
 // sumDouble(2, 2) → 8
 
+// function sumDouble(value1,value2) {
+//     return value1 + value2
+// }
+
 
 // Exercise 3
 // Given an int n, return true if it is within 10 of 100 or 200. Note: Math.abs(num) computes
@@ -33,6 +46,10 @@
 // nearHundred(93) → true
 // nearHundred(90) → true
 // nearHundred(89) → false
+
+function f() {
+
+}
 
 // Exercise 4
 // Given a string and a non-negative int n, return a larger string that is n copies of the original
