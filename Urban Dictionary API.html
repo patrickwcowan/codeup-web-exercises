@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>U/D API</title>
+</head>
+<body>
+
+
+
+<input id="location">
+<button id="urbanEnter">Search</button>
+
+<div>
+    <h5 id="urban"></h5>
+</div>
+
+    <!--<div>-->
+        <!--<input type="radio" name="urban-definition-0" value="0">Definition 1<br>-->
+        <!--<input type="radio" name="urban-definition-1" value="1">Definition 2<br>-->
+        <!--<input type="radio" name="urban-definition-2" value="2">Definition 3<br>-->
+        <!--<input type="radio" name="urban-definition-3" value="3">Definition 4<br>-->
+        <!--<input type="radio" name="urban-definition-4" value="4">Definition 5<br>-->
+        <!--<input type="radio" name="urban-definition-5" value="5">Definition 6<br>-->
+        <!--<input type="radio" name="urban-definition-6" value="6">Definition 7<br>-->
+        <!--<input type="radio" name="urban-definition-7" value="7">Definition 8<br>-->
+        <!--<input type="radio" name="urban-definition-8" value="8">Definition 9<br>-->
+        <!--<input type="radio" name="urban-definition-9" value="9">Definition 10<br>-->
+    <!--</div>-->
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+
+
+        var value = '';
+        $('button').click(function () {
+            value = $('#location').val();
+            insertSearch(value)
+        });
+
+
+;
+
+        function insertSearch(searchTerm) {
+
+
+            var location = $.ajax(`http://api.urbandictionary.com/v0/define?term=${searchTerm}`);
+
+            location.done(function (data) {
+
+                var result = data.list[0].definition;
+
+                result = result.replace('[','');
+
+                result = result.replace(']','');
+
+                result = result.replace('[','');
+
+                result = result.replace(']','');
+
+                $('#urban').html(result);
+
+
+
+            });
+
+
+
+        }
+
+        let numbers = [1, 2, 3, 4, 5];
+        numbers.map(n => n * 3);
+
+        console.log(numbers)
+
+
+
+
+
+
+
+
+
+    });
+</script>
+</body>
+</html>

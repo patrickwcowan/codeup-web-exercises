@@ -47,9 +47,6 @@
 // nearHundred(90) → true
 // nearHundred(89) → false
 
-function f() {
-
-}
 
 // Exercise 4
 // Given a string and a non-negative int n, return a larger string that is n copies of the original
@@ -61,6 +58,14 @@ function f() {
 // stringTimes('Hi', 3) → HiHiHi
 // stringTimes('Hi', 1) → Hi
 
+
+const laugh = num => 'ha'.repeat(num) + '!';
+console.log(laugh(3));
+
+function stringTimes(string,n) {
+    return string.repeat(n)
+
+}
 
 // Exercise 5
 // Return the number of times that the string "hi" appears anywhere in the given string.

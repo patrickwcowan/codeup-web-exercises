@@ -75,7 +75,7 @@ const fruits = ["cantaloupe", "orange", "date", "elderberry", "ugli fruit", "pin
 //     1. Create an array of the first letters of each fruit
 
 const firstLetter = fruits.map(function (n) {
-   return fruits
+   return n[0]
 });
 
 console.log(firstLetter);
