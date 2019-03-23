@@ -11,29 +11,29 @@
     <!--Box that is the whole calculator-->
     <div class="bigBox">
         <div class="row">
-            <div class="zeroBox numberZero">&nbsp;&nbsp;&nbsp;0</div>
-            <div class="periodBox box textStyle numberPeriod">.</div>
-            <div class="equalsBox box operator textStyle">=</div>
+            <div class="zeroBox numberZero" id="zeroDiv">&nbsp;&nbsp;&nbsp;0</div>
+            <div class="periodBox box textStyle numberPeriod" id="periodDiv">.</div>
+            <div class="equalsBox box operator textStyle" id="equalsDiv">=</div>
 
-            <div class="box2 oneBox number textStyle" id="number1">1</div>
+            <div class="box2 oneBox number textStyle" id="number1"><a href="#"></a>1</div>
             <div class="box2 twoBox number textStyle" id="number2">2</div>
             <div class="box threeBox number textStyle" id="number3">3</div>
-            <div class="box plusBox operator textStyle">+</div>
+            <div class="box plusBox operator textStyle" id="plusDiv">+</div>
 
             <div class="box2 fourBox number textStyle" id="number4">4</div>
             <div class="box2 fiveBox number textStyle" id="number5">5</div>
             <div class="box sixBox number textStyle" id="number6">6</div>
-            <div class="box minusBox operator textStyle">-</div>
+            <div class="box minusBox operator textStyle" id="minusDiv">-</div>
 
             <div class="box2 sevenBox number textStyle" id="number7">7</div>
             <div class="box2 eightBox number textStyle" id="number8">8</div>
             <div class="box nineBox number textStyle" id="number9">9</div>
-            <div class="box timesBox operatorTimes textStyle">x</div>
+            <div class="box timesBox operatorTimes textStyle" id="timesDiv">x</div>
 
-            <div class="box2 cBox textStyle operatorAC">AC</div>
-            <div class="box2 plusMinusBox textStyle operatorPlusMinus">+/-</div>
-            <div class="box percentageBox operatorPercentage textStyle">%</div>
-            <div class="box divisionBox operator textStyle">÷</div>
+            <div class="box2 cBox textStyle operatorAC" id="acDiv">AC</div>
+            <div class="box2 plusMinusBox textStyle operatorPlusMinus" id="plusMinusDiv">+/-</div>
+            <div class="box percentageBox operatorPercentage textStyle" id="modulusDiv">%</div>
+            <div class="box divisionBox operator textStyle" id="divisionDiv">÷</div>
 
             <div class="displayBox"></div>
 
@@ -48,13 +48,6 @@
 <script>
 "use strict";
 $(document).ready(function() {
-
-
-    $('#number1').click(function () {
-        $('#number1').css('background', 'rgb(169,164,154)');
-        $(this).off('click');
-    });
-
 
 });
 </script>
